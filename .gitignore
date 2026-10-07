@@ -8,5 +8,8 @@ dist/
 artifacts/
 records/
 .qe-hpc/
+/request.json
+/input.in
+/pseudo/
 *.UPF
 *.upf

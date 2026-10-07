@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "cluster": {
+    "host": "my-cluster",
+    "remote_root": "/scratch/my-user/qe-jobs",
+    "qe_executable": "pw.x",
+    "mpi_launcher": "srun",
+    "modules": ["quantum-espresso/7.2"]
+  },
+  "job": {
+    "job_id": "mgo_scf_001",
+    "calculation": "scf",
+    "input_file": "input.in",
+    "pseudopotentials": ["pseudo/Mg.upf", "pseudo/O.upf"],
+    "resources": {
+      "partition": "compute",
+      "mpi_ranks": 4,
+      "threads_per_rank": 2,
+      "memory": "16G",
+      "walltime": "02:00:00"
+    }
+  }
+}

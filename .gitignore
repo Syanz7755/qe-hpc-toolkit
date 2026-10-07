@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+artifacts/
+records/
+.qe-hpc/
+*.UPF
+*.upf
